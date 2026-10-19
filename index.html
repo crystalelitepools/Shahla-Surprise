@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#ffedf5" />
+  <title>For Shahla Aapi 💗</title>
+  <style>
+    :root {
+      --pink: #ff6fae;
+      --pink-dark: #e84e91;
+      --rose: #fff0f6;
+      --purple: #8b5cf6;
+      --ink: #512743;
+      --muted: #805b70;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      min-height: 100vh;
+      color: var(--ink);
+      font-family: "Trebuchet MS", Arial, sans-serif;
+      background:
+        radial-gradient(circle at 10% 12%, rgba(255,255,255,.95) 0 4px, transparent 5px),
+        radial-gradient(circle at 85% 24%, rgba(255,255,255,.8) 0 5px, transparent 6px),
+        linear-gradient(135deg, #fff4f8 0%, #ffe2ef 48%, #eee6ff 100%);
+      overflow-x: hidden;
+    }
+    .floating-hearts { position: fixed; inset: 0; pointer-events: none; overflow: hidden; z-index: 0; }
+    .floating-heart {
+      position: absolute; bottom: -50px; opacity: .55; animation: floatUp linear infinite;
+      filter: drop-shadow(0 5px 8px rgba(232,78,145,.15));
+    }
+    @keyframes floatUp {
+      from { transform: translateY(0) rotate(0deg); }
+      to { transform: translateY(-115vh) rotate(28deg); }
+    }
+    .page { position: relative; z-index: 1; width: min(100% - 28px, 920px); margin: auto; padding: 22px 0 42px; }
+    .top-pill {
+      display: inline-flex; align-items: center; gap: 8px; padding: 9px 15px; border-radius: 999px;
+      background: rgba(255,255,255,.76); border: 1px solid rgba(255,111,174,.24);
+      color: var(--pink-dark); font-weight: 800; font-size: .9rem; box-shadow: 0 8px 25px rgba(170,72,125,.08);
+    }
+    header { text-align: center; padding: 30px 0 14px; }
+    .eyebrow { color: var(--pink-dark); font-weight: 800; letter-spacing: 2px; text-transform: uppercase; font-size: .75rem; }
+    h1 { font-size: clamp(2.45rem, 8vw, 5.2rem); line-height: 1.02; margin: 16px 0 14px; letter-spacing: -2px; }
+    h1 .name { display: block; color: var(--pink-dark); text-shadow: 0 5px 0 rgba(255,255,255,.65); }
+    .subtitle { max-width: 620px; margin: 0 auto; font-size: clamp(1rem, 2.5vw, 1.2rem); line-height: 1.75; color: var(--muted); }
+    .hero-card {
+      max-width: 740px; margin: 26px auto 22px; padding: clamp(22px, 5vw, 42px);
+      text-align: center; background: rgba(255,255,255,.8); border: 1px solid rgba(255,255,255,.95);
+      border-radius: 30px; box-shadow: 0 22px 70px rgba(143,74,113,.14); backdrop-filter: blur(8px);
+    }
+    .big-heart { font-size: clamp(4.5rem, 15vw, 7rem); line-height: 1.1; display: inline-block; animation: heartbeat 1.35s ease-in-out infinite; }
+    @keyframes heartbeat { 0%, 100% { transform: scale(1); } 12% { transform: scale(1.12); } 24% { transform: scale(1); } 36% { transform: scale(1.08); } }
+    .hero-card h2 { font-size: clamp(1.55rem, 4vw, 2.35rem); margin: 13px 0 10px; }
+    .hero-card p { color: var(--muted); line-height: 1.8; font-size: 1.04rem; margin: 0 auto; max-width: 570px; }
+    .button-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 12px; margin-top: 24px; }
+    button {
+      border: 0; border-radius: 999px; padding: 14px 21px; font: inherit; font-weight: 800; cursor: pointer;
+      transition: transform .2s ease, box-shadow .2s ease; min-height: 48px;
+    }
+    button:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(195,70,130,.18); }
+    button:focus-visible { outline: 3px solid #8b5cf6; outline-offset: 3px; }
+    .primary { color: white; background: linear-gradient(135deg, #ff6fae, #e84e91); box-shadow: 0 8px 18px rgba(232,78,145,.24); }
+    .secondary { color: #7b3d9b; background: #f1e8ff; border: 1px solid #e2d1ff; }
+    .section-title { text-align: center; font-size: clamp(1.65rem, 4vw, 2.35rem); margin: 40px 0 8px; }
+    .section-subtitle { text-align: center; color: var(--muted); margin: 0 0 20px; line-height: 1.6; }
+    .cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px; }
+    .card {
+      background: rgba(255,255,255,.78); border: 1px solid rgba(255,255,255,.95); border-radius: 23px;
+      padding: 23px 19px; text-align: center; box-shadow: 0 12px 35px rgba(143,74,113,.08);
+    }
+    .card .emoji { font-size: 2.4rem; display: block; margin-bottom: 12px; }
+    .card h3 { margin: 0 0 9px; font-size: 1.1rem; }
+    .card p { margin: 0; color: var(--muted); line-height: 1.7; font-size: .95rem; }
+    .note {
+      margin: 26px auto 0; max-width: 740px; padding: clamp(23px, 5vw, 36px); border-radius: 28px;
+      background: linear-gradient(135deg, rgba(255,255,255,.88), rgba(255,242,249,.9));
+      border: 1px solid white; box-shadow: 0 15px 45px rgba(143,74,113,.1); text-align: center;
+    }
+    .note h2 { margin: 0 0 12px; font-size: clamp(1.5rem, 4vw, 2.1rem); }
+    .note p { color: var(--muted); line-height: 1.9; margin: 0 auto; max-width: 600px; }
+    #surprise { display: none; margin: 22px auto 0; padding: 23px; max-width: 620px; border-radius: 22px; background: #fff; border: 2px dashed #ff9bc5; animation: pop .45s ease both; }
+    #surprise.show { display: block; }
+    #surprise h3 { margin: 0 0 8px; color: var(--pink-dark); font-size: 1.4rem; }
+    #surprise p { margin: 0; line-height: 1.8; }
+    @keyframes pop { from { opacity: 0; transform: scale(.88); } to { opacity: 1; transform: scale(1); } }
+    .footer { text-align: center; color: var(--muted); font-size: .9rem; padding: 32px 0 5px; line-height: 1.8; }
+    .footer strong { color: var(--pink-dark); }
+    .toast { min-height: 30px; text-align: center; color: #8a3d70; font-weight: 800; margin-top: 14px; }
+    @media (max-width: 680px) {
+      .cards { grid-template-columns: 1fr; }
+      .card { padding: 21px; }
+      h1 { letter-spacing: -1px; }
+      .page { width: min(100% - 20px, 920px); }
+      .hero-card { border-radius: 24px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; scroll-behavior: auto !important; transition-duration: .01ms !important; }
+    }
+  </style>
+</head>
+<body>
+  <div class="floating-hearts" id="floatingHearts" aria-hidden="true"></div>
+  <main class="page">
+    <header>
+      <div class="top-pill">💌 A tiny website, a BIG hug</div>
+      <p class="eyebrow" style="margin-top:24px">Made with lots of love</p>
+      <h1>For my favourite <span class="name">Shahla Aapi 💗</span></h1>
+      <p class="subtitle">Aapi, this little corner of the internet is just for you — because one “sorry” was not enough to show you how much you mean to me. 🥹</p>
+    </header>
+
+    <section class="hero-card">
+      <div class="big-heart" aria-label="heart">💖</div>
+      <h2>Aapi, you are officially TOO precious! 🌷</h2>
+      <p>Thank you for forgiving me. I know we are okay now, but I still wanted to make you smile… and remind you that you are loved more than all the biryani in the world. And that is A LOT. 😂❤️</p>
+      <div class="button-row">
+        <button class="primary" id="hugBtn">Send Aapi a virtual hug 🤗</button>
+        <button class="secondary" id="surpriseBtn">Open your surprise 🎁</button>
+      </div>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+      <div id="surprise">
+        <h3>Surprise, Shahla Aapi! 🎉💗</h3>
+        <p>You are not just my Aapi — you are my built-in bestie, my blessing, and sometimes my personal “breaking news” channel. 😂 May your life always be full of happiness, health, peace, and all the things that make you smile. Love you loads! 🫶</p>
+      </div>
+    </section>
+
+    <h2 class="section-title">Official Aapi Appreciation Awards 🏆</h2>
+    <p class="section-subtitle">The jury has reached a decision. There is no appeal. 😂</p>
+    <section class="cards" aria-label="Aapi appreciation awards">
+      <article class="card">
+        <span class="emoji">👑</span>
+        <h3>Queen of the Family</h3>
+        <p>Because Aapi’s presence is enough to make the whole room feel important. Royal entry required. 👸</p>
+      </article>
+      <article class="card">
+        <span class="emoji">😂</span>
+        <h3>Best Gussa Face</h3>
+        <p>Scary for approximately 3 seconds… then still the cutest person ever. Please do not revoke my award. 🥹</p>
+      </article>
+      <article class="card">
+        <span class="emoji">💗</span>
+        <h3>Unlimited Love Award</h3>
+        <p>For being one of my favourite people, even when I act like a silly little potato. 🥔💕</p>
+      </article>
+    </section>
+
+    <section class="note">
+      <h2>A little note from my heart 💌</h2>
+      <p>Dear Shahla Aapi,<br><br>
+        I am so happy that you forgave me. I never want a small misunderstanding to take away our smiles. If I ever upset you, please know that it was never bigger than the love and respect I have for you. You are very special to me, and I hope this tiny website brings a big smile to your face. 🥹💞<br><br>
+        <strong>One last announcement:</strong> Aapi’s smile is a national treasure, and keeping it safe is my full-time job. Salary: one hug. 😂🤗
+      </p>
+      <div class="button-row">
+        <button class="primary" id="loveBtn">Tap for extra love 💕</button>
+      </div>
+      <div class="toast" id="loveMessage" role="status" aria-live="polite"></div>
+    </section>
+
+    <footer class="footer">
+        
+      Built with <strong>HTML, CSS, JavaScript</strong> & an unreasonable number of hearts 💗<br>
+      For Shahla Aapi, with love — always. 🌸
+    </footer>
+  </main>
+
+  <script>
+    const heartsContainer = document.getElementById("floatingHearts");
+    const heartSymbols = ["💗", "💖", "💕", "💘", "🌸", "✨"];
+    for (let i = 0; i < 24; i++) {
+      const heart = document.createElement("span");
+      heart.className = "floating-heart";
+      heart.textContent = heartSymbols[Math.floor(Math.random() * heartSymbols.length)];
+      heart.style.left = Math.random() * 100 + "%";
+      heart.style.fontSize = (14 + Math.random() * 20) + "px";
+      heart.style.animationDuration = (9 + Math.random() * 13) + "s";
+      heart.style.animationDelay = (-Math.random() * 18) + "s";
+      heartsContainer.appendChild(heart);
+    }
+
+    function burstHearts(count = 28) {
+      const symbols = ["💗", "💖", "💕", "💘", "✨", "🌷"];
+      for (let i = 0; i < count; i++) {
+        const bit = document.createElement("span");
+        bit.textContent = symbols[Math.floor(Math.random() * symbols.length)];
+        bit.style.position = "fixed";
+        bit.style.zIndex = "10";
+        bit.style.left = (8 + Math.random() * 84) + "vw";
+        bit.style.top = (25 + Math.random() * 45) + "vh";
+        bit.style.fontSize = (18 + Math.random() * 22) + "px";
+        bit.style.pointerEvents = "none";
+        bit.style.transition = "transform 1.5s ease, opacity 1.5s ease";
+        document.body.appendChild(bit);
+        requestAnimationFrame(() => {
+          bit.style.transform = `translate(${(Math.random() - 0.5) * 180}px, ${-100 - Math.random() * 220}px) rotate(${Math.random() * 100 - 50}deg)`;
+          bit.style.opacity = "0";
+        });
+        setTimeout(() => bit.remove(), 1600);
+      }
+    }
+
+    document.getElementById("hugBtn").addEventListener("click", () => {
+      document.getElementById("toast").textContent = "🤗 HUG DELIVERED! Aapi, please collect your 1000 virtual hugs! 💗";
+      burstHearts(22);
+    });
+
+    document.getElementById("surpriseBtn").addEventListener("click", () => {
+      document.getElementById("surprise").classList.add("show");
+      document.getElementById("surprise").scrollIntoView({ behavior: "smooth", block: "center" });
+      burstHearts(36);
+    });
+
+    document.getElementById("loveBtn").addEventListener("click", () => {
+      document.getElementById("loveMessage").textContent = "Breaking news: Shahla Aapi is loved 1000000% — no refunds, no cancellations! 😂💗";
+      burstHearts(30);
+    });
+  </script>
+</body>
+</html>
